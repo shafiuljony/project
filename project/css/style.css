@@ -1,0 +1,288 @@
+/*
+Theme Name: Event Managemant Html Template;
+Author: Arup paul;
+support:aruppaulctg@gmail.com;
+Description:Event management Html Template, creative Design;
+version 1.0;
+
+*/
+
+/* CSS Index
+-----------------------------------
+1.Theme Default  Css
+2.  header
+3. slider
+4. upcoming event
+5.about
+6.buy ticket  in this event
+7.events
+8.speaker
+9.gallery
+10.testimonial
+11.Footer
+
+
+
+
+
+*/
+
+/*Theme Default css */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: normal;
+	background: #7b8491;
+	
+	
+}
+.img{
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+.f-felt{
+	float: left;
+}
+.f-right{
+	float: right;
+}
+.fix{
+	overflow: hidden;
+}
+a,
+.button{
+	-webkit-transition:all 0.3s ease-out 0s;
+	transition:all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus{
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer .menu li a:hover{
+	color:#2206cc;
+	text-decoration: none;
+}
+a, 
+button{
+	color: #1696e2;
+	outline: medium none;
+}
+button:focus,input:focus,text-area,text-area:focus{
+  outline: 0;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins',sans-serif;
+	font-weight: normal;
+	color:#1c3354;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform:normal; 
+
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+	color: inherit;
+}
+ul{
+	margin:0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+p{
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color:#7b8491;
+	margin-bottom: 15px;
+}
+hr{
+	border-bottom: 1px solid #eccffa;
+	border-top: 0 none;
+	margin:30px 0;
+	padding: 0;
+}
+label{
+	color:#7e7e7e;
+	cursor:pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+::-moz-selection{
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection{
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-placeholder{
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+::-webkit-input-placeholder{
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+:-ms-input-placeholder{
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+::placeholder{
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.separator{
+	border-top:1px solid #f2f2f2;
+}
+.breadcrumb > .active{
+	color: #888;
+}
+
+/*scrooltop */
+#scroltop{
+	background: #7cba2f;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom:72px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+
+}
+.scrollTop:hover{
+	background: #062971;
+	color: #fff;
+}
+.scrollTop {
+	position: fixed;
+	background: #0f6a60e3;
+	height: 40px;
+	width: 40px;
+	right: 50px;
+	bottom: 72px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 35px;
+	display: none;
+}
+/*scroll top end*/
+.section-title{}
+.section-title span {
+	background: #FBE30C;
+	height: 5px;
+	width: 150px;
+	display: inline-block;
+	margin: 8px;
+	border-radius: 25%;
+}
+.section-title h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	line-height: 25px;
+	
+}
+.section-title p{
+	color: #222;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Pre Loader*/
+.spinner-2 {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout2 1.0s infinite ease-in-out;
+  animation: sk-scaleout2 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout2 {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+@keyframes sk-scaleout2 {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+.factorian-site-preloader-wrap{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #EAEEF3;
+	z-index: 9999;
+}
+.factorian-site-preloader-wrap .spinner-2{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+/*Pre Loader*/
+/* header  */
+.main-menu ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.main-menu ul li a {
+	
+	font-size: 14px;
+	
+	
+}
